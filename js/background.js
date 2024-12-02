@@ -64,17 +64,17 @@
     const t = e ? "" : "-off";
     n.action.setIcon({
       path: {
-        16: `/images/icon${t}-16.png`,
-        32: `/images/icon${t}-32.png`,
-        48: `/images/icon${t}-48.png`,
-        128: `/images/icon${t}-128.png`,
+        16: `/images/logo${t}.png`,
+        32: `/images/logo${t}.png`,
+        48: `/images/logo${t}.png`,
+        128: `/images/logo${t}.png`,
       },
     });
   }
   n.runtime.onInstalled.addListener(({ reason: e }) => {
-    "install" === e && n.tabs.create({ url: "https://unhook.app/welcome" });
+    "install" === e && n.tabs.create({ url: "#" });
   }),
-    n.runtime.setUninstallURL("https://unhook.app/uninstall");
+    n.runtime.setUninstallURL("#");
   let c = {
     hide_feed: !1,
     hide_redirect_home: !1,

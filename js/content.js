@@ -106,9 +106,6 @@ async function fetchVideosByTopic(topic) {
 }
 
 
-
-
-
 // Listen for changes in storage and update the page accordingly
 chrome.storage.onChanged.addListener((changes) => {
   if (changes.topic && changes.topic.newValue) {
@@ -181,8 +178,8 @@ chrome.storage.sync.get('topic', (data) => {
               });
         });
     }
-    document.unhookRunning ||
-      ((document.unhookRunning = !0),
+    document.ydtRunning ||
+      ((document.ydtRunning = !0),
       window === window.parent
         ? s()
         : window.addEventListener("DOMContentLoaded", () => {
