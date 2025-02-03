@@ -1,0 +1,3 @@
+Detoxify home page -- {layout, styling like youtube}
+Hide: Sidebar, Shorts, Comments
+
